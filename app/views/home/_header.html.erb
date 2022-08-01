@@ -23,6 +23,10 @@
 
       <% if user_signed_in? %>
 
+          <%= link_to 'Add Pin', new_pin_path %> &ensp;  
+          |  &ensp;
+          <%= link_to 'List Pins', pins_path %> &ensp;  
+          |  &ensp;
           <%= link_to 'Logout', destroy_user_session_path, method: :delete %> &ensp;  
           |  &ensp;
           <%= link_to 'Edit Profile', edit_user_registration_path, method: :delete %> &ensp;  
